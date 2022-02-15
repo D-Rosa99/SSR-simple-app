@@ -4,7 +4,7 @@
   "description": "Server side rendering project",
   "main": "index.js",
   "scripts": {
-    "start:server": "node src/index.js",
+    "start:dev": "npm-run-all -p build:server build:client start:dev:server",
     "start:dev:server": "nodemon --watch build --exec node build/bundle.js",
     "build:server": "webpack --config webpack.server.js --watch",
     "build:client": "webpack --config webpack.client.js --watch"
