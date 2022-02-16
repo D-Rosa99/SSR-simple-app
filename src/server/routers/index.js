@@ -3,6 +3,6 @@ import rendered from "../controllers/renderer";
 
 const router = Router();
 
-router.get("/", rendered);
+router.get("*", rendered);
 
 export default router;
